@@ -1,6 +1,6 @@
 pkgbase = oscam
 	pkgdesc = Open Source Conditional Access Module software
-	pkgver = 7943
+	pkgver = 8109
 	pkgrel = 1
 	url = http://www.oscam.cc
 	arch = x86_64
@@ -8,7 +8,7 @@ pkgbase = oscam
 	license = GPL3
 	depends = libusb
 	depends = openssl
-	noextract = oscam-7943.zip
+	noextract = oscam-8109.zip
 	backup = etc/logrotate.d/oscam
 	backup = var/lib/oscam/oscam.ac
 	backup = var/lib/oscam/oscam.cacheex
@@ -24,10 +24,10 @@ pkgbase = oscam
 	backup = var/lib/oscam/oscam.tiers
 	backup = var/lib/oscam/oscam.user
 	backup = var/lib/oscam/oscam.whitelist
-	source = oscam-7943.zip::http://www.streamboard.tv/oscam/changeset/7943/trunk?old_path=%2F&old=7943&format=zip
+	source = oscam-8109.zip::http://www.streamboard.tv/oscam/changeset/8109/trunk?old_path=%2F&old=8109&format=zip
 	source = oscam.logrotate
 	source = oscam.service
-	md5sums = eef1888f9921d982132435a7706d8a33
+	md5sums = 378cbf5c5b98038f5c31c5c6a987d717
 	md5sums = 1fadb043e8bf28f3a5fed8732dad39a3
 	md5sums = 5aff1b9db0027133f3f104fb19d5820c
 
