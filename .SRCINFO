@@ -6,9 +6,9 @@ pkgbase = oscam
 	arch = x86_64
 	arch = i686
 	license = GPL3
+	makedepends = svn
 	depends = libusb
 	depends = openssl
-	noextract = oscam-8500.zip
 	backup = etc/logrotate.d/oscam
 	backup = var/lib/oscam/oscam.ac
 	backup = var/lib/oscam/oscam.cacheex
@@ -24,10 +24,10 @@ pkgbase = oscam
 	backup = var/lib/oscam/oscam.tiers
 	backup = var/lib/oscam/oscam.user
 	backup = var/lib/oscam/oscam.whitelist
-	source = oscam-8500.zip::http://www.streamboard.tv/oscam/changeset/8500/trunk?old_path=%2F&old=8500&format=zip
+	source = oscam-8500::svn+http://www.streamboard.tv/svn/oscam/trunk#revision=8500
 	source = oscam.logrotate
 	source = oscam.service
-	md5sums = 646a059bf01f4dc7e0335faf7e1edd36
+	md5sums = SKIP
 	md5sums = 1fadb043e8bf28f3a5fed8732dad39a3
 	md5sums = a20f9587d521ca1b65a760473cb740a8
 
