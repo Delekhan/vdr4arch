@@ -3,6 +3,7 @@ pkgbase = oscam
 	pkgver = 8600
 	pkgrel = 1
 	url = http://www.oscam.cc
+	install = oscam.install
 	arch = x86_64
 	arch = i686
 	license = GPL3
@@ -29,7 +30,7 @@ pkgbase = oscam
 	source = oscam.service
 	md5sums = d3e53c660c63e04aac45fde472a860f5
 	md5sums = 1fadb043e8bf28f3a5fed8732dad39a3
-	md5sums = a20f9587d521ca1b65a760473cb740a8
+	md5sums = 2655fb6be9107cd16ea9b1595d169d78
 
 pkgname = oscam
 
