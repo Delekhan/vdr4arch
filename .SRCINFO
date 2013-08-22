@@ -1,7 +1,7 @@
 pkgbase = oscam
 	pkgdesc = Open Source Conditional Access Module software
 	pkgver = 8800
-	pkgrel = 3
+	pkgrel = 4
 	url = http://www.oscam.cc
 	install = oscam.install
 	arch = x86_64
@@ -14,9 +14,11 @@ pkgbase = oscam
 	source = oscam-8800.zip::http://www.streamboard.tv/oscam/changeset/8800/trunk?old_path=%2F&old=8800&format=zip
 	source = oscam.conf
 	source = oscam.service
+	source = oscam-faster_retry.diff
 	md5sums = b8b8fb16af47ca2cd60e558beb103dad
 	md5sums = f6200432fa01030016d6fac913033812
-	md5sums = 66f54fad241d521800d7529ad4e23e3a
+	md5sums = 6e188f89aecbc64c7c6ca421beee54d8
+	md5sums = b6e2a040ce40486fc33ab861fab5730a
 
 pkgname = oscam
 
