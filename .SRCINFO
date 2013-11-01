@@ -1,7 +1,7 @@
 pkgbase = oscam
 	pkgdesc = Open Source Conditional Access Module software
-	pkgver = 9000
-	pkgrel = 2
+	pkgver = 9003
+	pkgrel = 1
 	url = http://www.oscam.cc
 	install = oscam.install
 	arch = x86_64
@@ -9,15 +9,15 @@ pkgbase = oscam
 	license = GPL3
 	depends = libusb
 	depends = openssl
-	noextract = oscam-9000.zip
+	noextract = oscam-9003.zip
 	backup = var/lib/oscam/oscam.conf
-	source = oscam-9000.zip::http://www.streamboard.tv/oscam/changeset/9000/trunk?old_path=%2F&old=9000&format=zip
+	source = oscam-9003.zip::http://www.streamboard.tv/oscam/changeset/9003/trunk?old_path=%2F&old=9003&format=zip
 	source = oscam.conf
 	source = oscam.service
 	source = oscam-faster_retry.diff
-	md5sums = 190547ca10b408266467bb51ad9bf149
+	md5sums = 4aaccc18abe43dd2bf7f01f16de06983
 	md5sums = f6200432fa01030016d6fac913033812
-	md5sums = 6e188f89aecbc64c7c6ca421beee54d8
+	md5sums = 0de56c99e34a6bdb7f4dc6349478a920
 	md5sums = b67f77bf1ecaeb9bc4f8cddb5258ed4e
 
 pkgname = oscam
