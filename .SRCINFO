@@ -6,6 +6,7 @@ pkgbase = oscam
 	install = oscam.install
 	arch = x86_64
 	arch = i686
+	arch = armv6h
 	license = GPL3
 	depends = libusb
 	depends = openssl
