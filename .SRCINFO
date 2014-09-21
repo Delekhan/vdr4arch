@@ -1,6 +1,6 @@
 pkgbase = oscam
 	pkgdesc = Open Source Conditional Access Module software
-	pkgver = 9827
+	pkgver = 9855
 	pkgrel = 1
 	url = http://www.streamboard.tv/oscam
 	install = oscam.install
@@ -12,13 +12,13 @@ pkgbase = oscam
 	license = GPL3
 	depends = libusb
 	depends = openssl
-	noextract = oscam-9827.zip
+	noextract = oscam-9855.zip
 	backup = var/lib/oscam/oscam.conf
-	source = oscam-9827.zip::http://www.streamboard.tv/oscam/changeset/9827/trunk?old_path=%2F&old=9827&format=zip
+	source = oscam-9855.zip::http://www.streamboard.tv/oscam/changeset/9855/trunk?old_path=%2F&old=9855&format=zip
 	source = oscam.conf
 	source = oscam.service
 	source = oscam-faster_retry.diff
-	md5sums = ea9ee06a0dc8f1dcdb9aadb8edbd77a5
+	md5sums = 872ff4a24140fee725502b3fcd74f1dc
 	md5sums = f6200432fa01030016d6fac913033812
 	md5sums = 0de56c99e34a6bdb7f4dc6349478a920
 	md5sums = b67f77bf1ecaeb9bc4f8cddb5258ed4e
