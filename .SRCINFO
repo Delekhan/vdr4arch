@@ -1,6 +1,6 @@
 pkgbase = oscam
 	pkgdesc = Open Source Conditional Access Module software
-	pkgver = 10361
+	pkgver = 10460
 	pkgrel = 1
 	url = http://www.streamboard.tv/oscam
 	install = oscam.install
@@ -12,11 +12,11 @@ pkgbase = oscam
 	license = GPL3
 	depends = libusb
 	depends = openssl
-	noextract = oscam-10361.zip
-	source = oscam-10361.zip::http://www.streamboard.tv/oscam/changeset/10361/trunk?old_path=%2F&old=10361&format=zip
+	noextract = oscam-10460.zip
+	source = oscam-10460.zip::http://www.streamboard.tv/oscam/changeset/10460/trunk?old_path=%2F&old=10460&format=zip
 	source = oscam.service
 	source = oscam.sysuser
-	md5sums = 5ea00ee91bf71bf8dd3fe8597a3189fe
+	md5sums = 6094aa1f566599d98ee8ab0e2e51c8d0
 	md5sums = 0de56c99e34a6bdb7f4dc6349478a920
 	md5sums = be0d9d7a5fdd8cf4918c4ea91cebd989
 
