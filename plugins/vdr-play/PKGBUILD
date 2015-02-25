@@ -8,7 +8,7 @@ pkgdesc="Mediaplayer plugin for VDR and X11"
 url="http://projects.vdr-developer.org/projects/plg-play"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('AGPL3')
-depends=('mplayer' "vdr-api=${_vdrapi}" 'xcb-util-image' 'xcb-util-keysyms' 'xcb-util-wm')
+depends=('mplayer' 'vdr' 'xcb-util-image' 'xcb-util-keysyms' 'xcb-util-wm')
 makedepends=('git')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("git://projects.vdr-developer.org/vdr-plugin-play.git#commit=$_gitver"

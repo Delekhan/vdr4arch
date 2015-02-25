@@ -7,7 +7,7 @@ pkgdesc="use external players in VDR"
 url="http://www.uli-eckhardt.de/vdr/external.en.shtml"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('gcc-libs' "vdr-api=${_vdrapi}")
+depends=('gcc-libs' 'vdr')
 backup=('var/lib/vdr/plugins/externalplayer.conf')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("http://www.uli-eckhardt.de/vdr/download/$pkgname-$pkgver.tgz"

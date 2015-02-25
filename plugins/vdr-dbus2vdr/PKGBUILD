@@ -7,7 +7,7 @@ pkgdesc="Expose some methods via DBus to control the vdr"
 url="https://github.com/flensrocker/vdr-plugin-dbus2vdr"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('dbus' 'gcc-libs' 'glib2' 'libpng' "vdr-api=${_vdrapi}")
+depends=('dbus' 'gcc-libs' 'glib2' 'libpng' 'vdr')
 makedepends=('png++')
 backup=('etc/dbus-1/system.d/de.tvdr.vdr.conf')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')

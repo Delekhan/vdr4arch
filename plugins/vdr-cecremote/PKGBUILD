@@ -7,7 +7,7 @@ pkgdesc="Receive and send commands via CEC"
 url="http://uli-eckhardt.de/vdr"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('libcec' 'pugixml' "vdr-api=${_vdrapi}")
+depends=('libcec' 'pugixml' 'vdr')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("http://www.uli-eckhardt.de/vdr/download/${pkgname}-${pkgver}.tgz"
         "50-$_plugname.conf")

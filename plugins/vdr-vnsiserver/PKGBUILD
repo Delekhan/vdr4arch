@@ -8,7 +8,7 @@ url="https://github.com/FernetMenta/vdr-plugin-vnsiserver"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
 pkgdesc="VDR plugin to handle XBMC clients"
-depends=('gcc-libs' "vdr-api=${_vdrapi}")
+depends=('gcc-libs' 'vdr')
 makedepends=('git')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("https://github.com/FernetMenta/vdr-plugin-$_plugname/archive/v$pkgver.tar.gz"

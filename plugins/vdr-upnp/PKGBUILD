@@ -8,7 +8,7 @@ pkgdesc="extends the VDR with the possibility to act as an UPnP/DLNA Media Serve
 url="http://projects.vdr-developer.org/projects/plg-softhddevice"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('libupnp' 'tntdb' 'tntnet' "vdr-api=${_vdrapi}")
+depends=('libupnp' 'tntdb' 'tntnet' 'vdr')
 makedepends=('boost' 'git')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("git://projects.vdr-developer.org/vdr-plugin-$_plugname.git#commit=$_gitver"

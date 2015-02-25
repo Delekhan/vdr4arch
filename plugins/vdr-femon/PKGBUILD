@@ -7,7 +7,7 @@ pkgdesc="DVB Frontend Status Monitor plugin"
 url="http://www.saunalahti.fi/rahrenbe/vdr/femon/"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('gcc-libs' "vdr-api=${_vdrapi}")
+depends=('gcc-libs' 'vdr')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("http://www.saunalahti.fi/~rahrenbe/vdr/femon/files/$pkgname-$pkgver.tgz"
         "femon.neu3.SNR_STR.diff.bz2::http://www.vdr-portal.de/index.php?page=Attachment&attachmentID=34539")

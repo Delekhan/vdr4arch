@@ -8,7 +8,7 @@ pkgrel=9
 url="http://www.sourceforge.net/projects/xineliboutput"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-makedepends=('dbus-glib' 'git' 'glu' 'libcec' 'libextractor' 'libxrandr' 'mesa' "vdr-api=${_vdrapi}" 'xine-lib')
+makedepends=('dbus-glib' 'git' 'glu' 'libcec' 'libextractor' 'libxrandr' 'mesa' 'vdr' 'xine-lib')
 _plugname=$(echo $pkgbase | sed 's/vdr-//g')
 source=("git://projects.vdr-developer.org/$_plugname.git#commit=$_gitver"
         'xineliboutput-vdr2.1.6compat.diff'
@@ -40,7 +40,7 @@ build() {
 
 package_vdr-xineliboutput() {
   pkgdesc="X11 and Linux framebuffer front-end for VDR"
-  depends=('dbus-glib' 'libextractor' 'libxrandr' 'mesa' "vdr-api=${_vdrapi}" 'xine-lib' 'xineliboutput-xineplug')
+  depends=('dbus-glib' 'libextractor' 'libxrandr' 'mesa' 'vdr' 'xine-lib' 'xineliboutput-xineplug')
   optdepends=('nvidia: Required for VDPAU decoding'
               'xorg-server: Required for software decoding')
   backup=("etc/vdr/conf.avail/50-$_plugname.conf"

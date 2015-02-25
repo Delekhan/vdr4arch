@@ -7,7 +7,7 @@ pkgdesc="Integrates multicast IPTV transport streams seamlessly into VDR"
 url="http://www.saunalahti.fi/~rahrenbe/vdr/iptv/"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('curl' "vdr-api=${_vdrapi}")
+depends=('curl' 'vdr')
 optdepends=('vlc: Needed for vlc2iptv')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("http://www.saunalahti.fi/~rahrenbe/vdr/$_plugname/files/$pkgname-$pkgver.tgz"

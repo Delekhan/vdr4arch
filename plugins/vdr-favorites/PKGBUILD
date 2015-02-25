@@ -7,7 +7,7 @@ pkgdesc="Implements a favorite channels menu"
 url="http://www.vdr-portal.de/board1-news/board2-vdr-news/p1039565-announce-vdr-favorites-0-0-2/"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('gcc-libs' "vdr-api=${_vdrapi}")
+depends=('gcc-libs' 'vdr')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("$pkgname-$pkgver.tgz::http://www.vdr-portal.de/index.php?page=Attachment&attachmentID=29502"
         "favorites-makefile-1.7.36.tar.gz::http://www.vdr-portal.de/index.php?page=Attachment&attachmentID=32856")

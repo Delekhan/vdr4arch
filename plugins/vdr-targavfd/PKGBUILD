@@ -9,7 +9,7 @@ pkgdesc="shows information about the current state of VDR on Targa USB Graphic V
 url="http://projects.vdr-developer.org/projects/show/plg-targavfd"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL3')
-depends=('freetype2' 'libusbx' "vdr-api=${_vdrapi}")
+depends=('freetype2' 'libusbx' 'vdr')
 makedepends=('git')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("git://projects.vdr-developer.org/vdr-plugin-targavfd.git#commit=$_gitver"

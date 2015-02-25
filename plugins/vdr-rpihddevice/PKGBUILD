@@ -8,7 +8,7 @@ pkgdesc="Output device for Raspberry Pi"
 url="http://projects.vdr-developer.org/projects/plg-rpihddevice"
 arch=('armv6h' 'armv7h')
 license=('GPL2')
-depends=('ffmpeg' 'mesa' 'raspberrypi-firmware-tools' "vdr-api=${_vdrapi}")
+depends=('ffmpeg' 'mesa' 'raspberrypi-firmware-tools' 'vdr')
 makedepends=('git')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("git://projects.vdr-developer.org/vdr-plugin-rpihddevice.git#commit=$_gitver"

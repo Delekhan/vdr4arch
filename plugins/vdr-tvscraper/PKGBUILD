@@ -7,7 +7,7 @@ pkgdesc="Runs in the background and collects metadata for all available EPG even
 url="http://www.vdr-portal.de/board1-news/board2-vdr-news/119880-announce-tvscrapper-0-0-1/"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('curl' 'jansson' 'libxml2' 'sqlite' "vdr-api=${_vdrapi}")
+depends=('curl' 'jansson' 'libxml2' 'sqlite' 'vdr')
 replaces=('vdr-tvscrapper')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("http://projects.vdr-developer.org/attachments/download/1742/$pkgname-$pkgver.tgz"

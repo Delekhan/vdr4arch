@@ -8,7 +8,7 @@ pkgdesc="Used to retrieve EPG data into the VDR"
 url="http://projects.vdr-developer.org/projects/plg-epg2vdr"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('libmariadbclient' 'libutil-linux' "vdr-api=${_vdrapi}")
+depends=('libmariadbclient' 'libutil-linux' 'vdr')
 makedepends=('git' 'imlib2' 'libxslt')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("git://projects.vdr-developer.org/vdr-plugin-epg2vdr.git#commit=$_gitver")

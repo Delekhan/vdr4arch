@@ -8,7 +8,7 @@ pkgdesc="Plex plugin for Linux VDR"
 url="https://github.com/chriszero/vdr-plugin-plex"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('poco' "vdr-api=${_vdrapi}")
+depends=('poco' 'vdr')
 makedepends=('git')
 replaces=('vdr-boblight')
 conflicts=('vdr-boblight')

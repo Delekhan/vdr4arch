@@ -7,7 +7,7 @@ pkgdesc="Displays information about background processes"
 url="http://projects.vdr-developer.org/projects/plg-undelete"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('gcc-libs' "vdr-api=${_vdrapi}")
+depends=('gcc-libs' 'vdr')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
 source=("http://ftp.uni-kl.de/pub/linux/gentoo/distfiles/$pkgname-$pkgver.tgz"
         "$pkgname-Makefile::https://raw.githubusercontent.com/CReimer/vdr-plugin-bgprocess/master/Makefile"

@@ -8,7 +8,7 @@ pkgdesc="Output to LCD modules that are supported by LCDproc"
 url="http://projects.vdr-developer.org/projects/plg-lcdproc"
 arch=('x86_64' 'i686' 'arm' 'armv6h' 'armv7h')
 license=('GPL2')
-depends=('gcc-libs' "vdr-api=${_vdrapi}")
+depends=('gcc-libs' 'vdr')
 makedepends=('git')
 optdepends=('lcdproc: to use local displays')
 _plugname=$(echo $pkgname | sed 's/vdr-//g')
