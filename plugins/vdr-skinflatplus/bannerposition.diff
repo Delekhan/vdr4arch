@@ -1,0 +1,20 @@
+--- displaychannel.orig.c	2016-02-06 19:42:17.000000000 +0100
++++ displaychannel.c	2016-02-06 19:47:15.000000000 +0100
+@@ -56,7 +56,7 @@ cFlatDisplayChannel::cFlatDisplayChannel
+         Config.decorBorderChannelSize+channelHeight - height, channelWidth, heightBottom));
+     chanIconsPixmap->Fill( clrTransparent );
+ 
+-    TVSLeft = 20 + Config.decorBorderChannelEPGSize;
++    TVSLeft = Config.decorBorderChannelEPGSize;
+     TVSTop = topBarHeight + Config.decorBorderTopBarSize*2 + 20 + Config.decorBorderChannelEPGSize;
+     TVSWidth = osdWidth - 40 - Config.decorBorderChannelEPGSize*2;
+     TVSHeight = osdHeight - topBarHeight - heightBottom - 40 - Config.decorBorderChannelEPGSize*2;
+@@ -472,7 +472,7 @@ void cFlatDisplayChannel::SetEvents(cons
+         if( img ) {
+             chanEpgImagesPixmap->DrawImage(cPoint(0, 0), *img);
+ 
+-            DecorBorderDraw(20 + Config.decorBorderChannelEPGSize, topBarHeight + Config.decorBorderTopBarSize*2 + 20 + Config.decorBorderChannelEPGSize, img->Width(), img->Height(),
++            DecorBorderDraw(Config.decorBorderChannelEPGSize, topBarHeight + Config.decorBorderTopBarSize*2 + 20 + Config.decorBorderChannelEPGSize, img->Width(), img->Height(),
+                 Config.decorBorderChannelEPGSize, Config.decorBorderChannelEPGType, Config.decorBorderChannelEPGFg, Config.decorBorderChannelEPGBg, BorderTVSPoster);
+         }
+     }
